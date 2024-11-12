@@ -1,0 +1,17 @@
+COLUMNS:
+  features:
+    Title: object
+    BodyMarkdown : object
+  tags:
+    Tag1: object
+    Tag2: object
+    Tag3: object
+    Tag4: object
+    Tag5: object
+
+TRAIN_COLUMNS:
+    input_features:
+      title: object
+    target_feature:
+      tags: object
+

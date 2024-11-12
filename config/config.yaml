@@ -1,0 +1,32 @@
+artifacts_root_dir: "artifacts"
+
+notebook_artifacts:
+  root_dir: "notebook"
+  data_filename: "SO_Tag_prediction.parquet"
+  cleaned_data_filename: "tags_text_processed.parquet"
+
+word_embeding:
+  root_dir: "word_embed"
+  glove_embed_url: "https://nlp.stanford.edu/data/"  
+
+data_ingestion:
+  root_dir: "data_ingestion"
+  data_downlad_url: "https://www.kaggle.com/competitions/stackoverflow-moderation/data"
+  zip_data: "stackoverflow-moderation.zip" 
+  data_filename: "SO_Tag_prediction.parquet"
+  data_test_filename: "test.parquet"
+
+data_cleaning:
+  root_dir: "data_cleaning"
+  cleaned_data_filename: "tags_text_processed.parquet"
+
+data_validation:
+  root_dir: "data_validation"
+  validation_report: "validation_status.txt"
+
+model_training:
+  root_dir: "model_trainer"
+  checkpoint_dir: "checkpoints"
+  train_log_dir: "training_logs"
+  serialize_objects_dir: "serialize_objects"
+  log_filename_format: logs_hparam_lr{}_units{}_dropout{}_batchsize{}_epoch{}
